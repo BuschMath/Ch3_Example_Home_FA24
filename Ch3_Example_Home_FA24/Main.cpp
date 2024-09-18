@@ -3,6 +3,11 @@
 
 int main()
 {
+	float z = 12;
+	std::cout << "z = " << z << std::endl;
+	std::cout << std::setw(10) << "z = " << z << std::endl;
+	std::cout << std::setw(10) << "abcdefghijklmnz = " << z << std::endl;
+
 	float y = 21.052;
 
 	std::cout << "y = " << y << std::endl;
