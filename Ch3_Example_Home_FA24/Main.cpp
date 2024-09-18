@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <string>
 
 int main()
 {
@@ -23,6 +24,17 @@ int main()
 	std::cout << std::showpoint << "x = " << x << std::endl;
 	std::cout << std::fixed << "x = " << x << std::endl;
 	std::cout << std::scientific << "x = " << x << std::endl;
+
+	std::string s = "Hello, World!";
+	std::cout << "s = " << s << std::endl;
+	std::cout << "s = " << s.length() << std::endl;
+	std::cout << "s = " << s.size() << std::endl;
+	std::cout << "s = " << s.find("World") << std::endl;
+	std::cout << "s = " << s.find("world") << std::endl;
+	std::cout << "s = " << s.substr(3, 5) << std::endl;
+	std::cout << "s = " << s.at(12) << std::endl;
+	std::cout << "s = " << char(std::toupper(s.at(11))) << std::endl;
+	std::cout << "s = " << char(std::tolower(s.at(0))) << std::endl;
 
 	return 0;
 }
