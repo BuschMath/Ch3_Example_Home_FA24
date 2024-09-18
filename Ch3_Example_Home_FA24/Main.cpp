@@ -7,10 +7,12 @@ int main()
 	std::cout << "z = " << z << std::endl;
 	std::cout << std::setw(10) << "z = " << z << std::endl;
 	std::cout << std::setw(10) << "abcdefghijklmnz = " << z << std::endl;
+	std::cout << std::setprecision(1) << "z = " << z << std::endl;
 
 	float y = 21.052;
 
 	std::cout << "y = " << y << std::endl;
+	std::cout << std::setprecision(4) << "y = " << y << std::endl;
 	std::cout << std::showpoint << "y = " << y << std::endl;
 	std::cout << std::fixed << "y = " << y << std::endl;
 	std::cout << std::scientific << "y = " << y << std::endl;
